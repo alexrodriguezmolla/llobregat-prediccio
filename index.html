@@ -31,9 +31,12 @@
       --blue-dim:    #1a3a5c;
       --green:       #3fb950;
       --green-dim:   #1a3a24;
+      --yellow:      #d29922;
+      --yellow-dim:  #3a2e0a;
+      --orange:      #e07b3a;
+      --orange-dim:  #3a1e0a;
       --red:         #f85149;
       --red-dim:     #3a1a1a;
-      --orange:      #d29922;
       --radius:      10px;
       --font:        'Inter', sans-serif;
       --mono:        'JetBrains Mono', monospace;
@@ -168,8 +171,10 @@
       border-radius: 4px;
       text-transform: uppercase;
     }
-    .risc-NORMAL { background: var(--green-dim); color: var(--green); }
-    .risc-CRITIC { background: var(--red-dim);   color: var(--red); }
+    .risc-NORMAL          { background: var(--green-dim);  color: var(--green); }
+    .risc-CARREGA_ELEVADA { background: var(--yellow-dim); color: var(--yellow); }
+    .risc-ALERTA          { background: var(--orange-dim); color: var(--orange); }
+    .risc-ALERTA_MAXIMA   { background: var(--red-dim);    color: var(--red); }
 
     /* Graella de prediccions */
     .pred-grid {
@@ -320,6 +325,21 @@ const DATA_URL = "https://raw.githubusercontent.com/alexrodriguezmolla/llobregat
 
 const INTERVAL_REFRESC_MS = 30 * 60 * 1000; // 30 minuts
 
+function calcularNivell(cabal, llindars) {
+    if (!llindars) return "NORMAL";
+    if (cabal >= llindars.ALERTA_MAXIMA) return "ALERTA_MAXIMA";
+    if (cabal >= llindars.ALERTA)        return "ALERTA";
+    if (cabal >= llindars.CARREGA_ELEVADA) return "CARREGA_ELEVADA";
+    return "NORMAL";
+}
+
+const CONFIG_NIVELL = {
+    NORMAL:           { label: "✓ NORMAL",        color: "var(--green)",  colorDim: "var(--green-dim)" },
+    CARREGA_ELEVADA:  { label: "↑ CÀRREGA ELEVADA", color: "var(--yellow)", colorDim: "var(--yellow-dim)" },
+    ALERTA:           { label: "⚠ ALERTA",         color: "var(--orange)", colorDim: "var(--orange-dim)" },
+    ALERTA_MAXIMA:    { label: "🔴 ALERTA MÀXIMA",  color: "var(--red)",    colorDim: "var(--red-dim)" }
+};
+
 // ─────────────────────────────────────────────
 //  MAPA
 // ─────────────────────────────────────────────
@@ -407,9 +427,10 @@ function renderitzarPanell(dades) {
 
     // ── Graella de prediccions ──
     let cellesHTML = punt.prediccions.map(p => {
-      const esCrit = p.risc.toUpperCase() === "CRÍTIC" || p.risc.toUpperCase() === "CRITIC";
+      const nivell = calcularNivell(p.cabal_m3s, punt.llindars);
+      const cfg    = CONFIG_NIVELL[nivell];
       return `
-        <div class="pred-cell ${esCrit ? "critic" : ""}">
+        <div class="pred-cell" style="border-color:${cfg.color};background:${cfg.colorDim}">
           <div class="pred-hores">+${p.hores_vista}h</div>
           <div class="pred-hora">${p.hora_prediccio}</div>
           <div class="pred-cabal">${p.cabal_m3s.toFixed(1)}</div>
@@ -442,11 +463,14 @@ function renderitzarPanell(dades) {
     const ctx    = document.getElementById(`chart-${punt.id}`).getContext("2d");
     const labels = punt.prediccions.map(p => `+${p.hores_vista}h\n${p.hora_prediccio}`);
     const vals   = punt.prediccions.map(p => p.cabal_m3s);
-    const colors = punt.prediccions.map(p => {
-      const c = p.risc.toUpperCase();
-      return (c === "CRÍTIC" || c === "CRITIC") ? "rgba(248,81,73,0.85)" : "rgba(47,129,247,0.85)";
+   const colors = punt.prediccions.map(p => {
+      const nivell = calcularNivell(p.cabal_m3s, punt.llindars);
+      return nivell === "ALERTA_MAXIMA"    ? "rgba(248,81,73,0.85)" :
+             nivell === "ALERTA"           ? "rgba(224,123,58,0.85)" :
+             nivell === "CARREGA_ELEVADA"  ? "rgba(210,153,34,0.85)" :
+                                             "rgba(47,129,247,0.85)";
     });
-    const llindar = punt.llindar_critic;
+    const llindar = punt.llindars?.ALERTA_MAXIMA ?? 999;
 
     if (charts[punt.id]) charts[punt.id].destroy();
     charts[punt.id] = new Chart(ctx, {
