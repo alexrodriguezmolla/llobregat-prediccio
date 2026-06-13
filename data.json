@@ -1,5 +1,5 @@
 {
-  "actualitzat": "2026-06-13T12:22:25.173402Z",
+  "actualitzat": "2026-06-13T12:32:29.799160Z",
   "punts": [
     {
       "id": "martorell",
@@ -9,7 +9,7 @@
         "lon": 1.9329
       },
       "llindar_critic": 87.07,
-      "timestamp_fitxer": null,
+      "timestamp_fitxer": "2026-06-13T12:57:00",
       "prediccions": []
     },
     {
