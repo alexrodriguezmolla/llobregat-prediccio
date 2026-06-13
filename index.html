@@ -402,7 +402,13 @@ function renderitzarPanell(dades) {
   panel.innerHTML = "";
 
   dades.punts.forEach(punt => {
-    if (!punt.prediccions || punt.prediccions.length === 0) {
+    // Comprovar si les dades tenen més de 6 hores
+    const ara = new Date();
+    const tsFitxer = punt.timestamp_fitxer ? new Date(punt.timestamp_fitxer) : null;
+    const horesAntig = tsFitxer ? (ara - tsFitxer) / 3600000 : 999;
+    const dadesAntigues = horesAntig > 6;
+
+    if (!punt.prediccions || punt.prediccions.length === 0 || dadesAntigues) {
       const div = document.createElement("div");
       div.className = "punt-card";
       div.id = `card-${punt.id}`;
@@ -410,10 +416,10 @@ function renderitzarPanell(dades) {
         <div class="punt-header">
           <div>
             <div class="punt-nom"><span class="punt-dot"></span>${punt.nom}</div>
-            <div class="punt-ts">Sense dades disponibles</div>
+            <div class="punt-ts">${dadesAntigues ? `Dades desactualitzades (fa ${Math.floor(horesAntig)}h)` : "Sense dades disponibles"}</div>
           </div>
         </div>
-        <div class="no-data">Cap fitxer de predicció trobat</div>`;
+        <div class="no-data">${dadesAntigues ? "⏳ Esperant nova predicció..." : "Cap fitxer de predicció trobat"}</div>`;
       panel.appendChild(div);
       return;
     }
@@ -485,17 +491,7 @@ function renderitzarPanell(dades) {
             borderRadius: 4,
             borderSkipped: false
           },
-          {
-            label: "Llindar crític",
-            data: Array(vals.length).fill(llindar),
-            type: "line",
-            borderColor: "rgba(248,81,73,0.6)",
-            borderDash: [4, 3],
-            borderWidth: 1.5,
-            pointRadius: 0,
-            fill: false
-          }
-        ]
+                  ]
       },
       options: {
         responsive: true,
@@ -514,6 +510,12 @@ function renderitzarPanell(dades) {
             grid:  { color: "#21262d" }
           },
           y: {
+            min: 0,
+            max: (() => {
+              const maxVal = Math.max(...vals);
+              const seg = Math.ceil(maxVal / 10) * 10;
+              return (seg - maxVal) < 1 ? seg + 10 : seg;
+            })(),
             ticks: { color: "#7d8590", font: { size: 9, family: "JetBrains Mono" } },
             grid:  { color: "#21262d" }
           }
