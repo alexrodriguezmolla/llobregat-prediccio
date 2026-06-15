@@ -1,5 +1,5 @@
 {
-  "actualitzat": "2026-06-15T21:52:37.934744Z",
+  "actualitzat": "2026-06-15T22:23:08.948123Z",
   "punts": [
     {
       "id": "martorell",
@@ -13,7 +13,7 @@
         "ALERTA": 56.0,
         "ALERTA_MAXIMA": 144.9
       },
-      "timestamp_fitxer": "2026-06-15T23:52:00",
+      "timestamp_fitxer": "2026-06-16T00:23:00",
       "prediccions": [
         {
           "hores_vista": 1,
