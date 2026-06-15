@@ -1,5 +1,5 @@
 {
-  "actualitzat": "2026-06-15T09:45:44.395088Z",
+  "actualitzat": "2026-06-15T10:15:17.107419Z",
   "punts": [
     {
       "id": "martorell",
@@ -13,51 +13,8 @@
         "ALERTA": 56.0,
         "ALERTA_MAXIMA": 144.9
       },
-      "timestamp_fitxer": "2026-06-15T11:15:00",
-      "prediccions": [
-        {
-          "hores_vista": 1,
-          "hora_prediccio": "10:00",
-          "cabal_m3s": 1.05,
-          "model": "MAR",
-          "risc": "NORMAL"
-        },
-        {
-          "hores_vista": 2,
-          "hora_prediccio": "11:00",
-          "cabal_m3s": 1.48,
-          "model": "M8",
-          "risc": "NORMAL"
-        },
-        {
-          "hores_vista": 3,
-          "hora_prediccio": "12:00",
-          "cabal_m3s": 1.54,
-          "model": "M8",
-          "risc": "NORMAL"
-        },
-        {
-          "hores_vista": 4,
-          "hora_prediccio": "13:00",
-          "cabal_m3s": 1.67,
-          "model": "M8",
-          "risc": "NORMAL"
-        },
-        {
-          "hores_vista": 5,
-          "hora_prediccio": "14:00",
-          "cabal_m3s": 1.87,
-          "model": "M8",
-          "risc": "NORMAL"
-        },
-        {
-          "hores_vista": 6,
-          "hora_prediccio": "15:00",
-          "cabal_m3s": 2.26,
-          "model": "M8",
-          "risc": "NORMAL"
-        }
-      ]
+      "timestamp_fitxer": null,
+      "prediccions": []
     },
     {
       "id": "stjoan",
