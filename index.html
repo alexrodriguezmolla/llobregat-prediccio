@@ -505,8 +505,8 @@ function renderitzarPanell(dades) {
     panel.appendChild(card);
 
     // ── Gràfica ──
-    const ctx    = document.getElementById(`chart-${punt.id}`).getContext("2d");
     const cabalAra = punt.cabal_actual;
+    const ctx    = document.getElementById(`chart-${punt.id}`).getContext("2d");
     const labelAra = cabalAra != null ? [`+0h\nara`] : [];
     const valAra   = cabalAra != null ? [cabalAra] : [];
     const colorAra = cabalAra != null ? ["rgba(125,133,144,0.7)"] : [];
