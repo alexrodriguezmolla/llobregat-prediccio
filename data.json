@@ -1,12 +1,12 @@
 {
-  "actualitzat": "2026-06-16T09:56:42.448095Z",
+  "actualitzat": "2026-06-16T10:08:08.323397Z",
   "punts": [
     {
       "id": "martorell",
       "nom": "Martorell",
       "coord": {
-        "lat": 41.4736,
-        "lon": 1.9329
+        "lat": 41.4776,
+        "lon": 1.9289
       },
       "llindars": {
         "CARREGA_ELEVADA": 21.6,
@@ -63,15 +63,15 @@
       "id": "stjoan",
       "nom": "Sant Joan Despí",
       "coord": {
-        "lat": 41.3738,
-        "lon": 2.0547
+        "lat": 41.3689,
+        "lon": 2.0374
       },
       "llindars": {
         "CARREGA_ELEVADA": 999.9,
         "ALERTA": 999.9,
         "ALERTA_MAXIMA": 999.9
       },
-      "timestamp_fitxer": "2026-06-16T11:56:00",
+      "timestamp_fitxer": "2026-06-16T12:08:00",
       "prediccions": [
         {
           "hores_vista": 1,
