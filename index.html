@@ -539,6 +539,19 @@ function renderitzarPanell(dades) {
   footer.className = "panel-footer";
   const seg = Math.round(INTERVAL_REFRESC_MS / 60000);
   footer.innerHTML = `🔄 S'actualitza cada ${seg} min · Dades: <a href="${DATA_URL}" target="_blank" style="color:var(--blue);text-decoration:none;">data.json</a>`;
+
+  dades.punts.forEach(punt => {
+    if (!punt.prediccions || punt.prediccions.length === 0) return;
+    const horaP1 = punt.prediccions[0].hora_prediccio;
+    const [h, m] = horaP1.split(":").map(Number);
+    const d = new Date();
+    d.setHours(h - 1, m, 0, 0);
+    const horaAPI = d.toLocaleString("ca-ES", { hour: "2-digit", minute: "2-digit", day: "2-digit", month: "2-digit" });
+    const liniaAPI = document.createElement("div");
+    liniaAPI.style.cssText = "font-size:0.7rem;color:var(--text-muted);padding:4px 18px 0";
+    liniaAPI.textContent = `Última actualització API ${punt.nom}: ${horaAPI}`;
+    panel.appendChild(liniaAPI);
+  });
   panel.appendChild(footer);
 }
 
