@@ -1,5 +1,5 @@
 {
-  "actualitzat": "2026-06-16T03:28:31.143478Z",
+  "actualitzat": "2026-06-16T03:59:04.619493Z",
   "punts": [
     {
       "id": "martorell",
@@ -13,47 +13,47 @@
         "ALERTA": 56.0,
         "ALERTA_MAXIMA": 144.9
       },
-      "timestamp_fitxer": "2026-06-16T05:28:00",
+      "timestamp_fitxer": "2026-06-16T05:59:00",
       "prediccions": [
         {
           "hores_vista": 1,
-          "hora_prediccio": "05:30",
-          "cabal_m3s": 0.92,
+          "hora_prediccio": "06:30",
+          "cabal_m3s": 0.93,
           "model": "MAR",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 2,
-          "hora_prediccio": "06:30",
-          "cabal_m3s": 1.19,
-          "model": "M8",
-          "risc": "NORMAL"
-        },
-        {
-          "hores_vista": 3,
           "hora_prediccio": "07:30",
           "cabal_m3s": 1.21,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
-          "hores_vista": 4,
+          "hores_vista": 3,
           "hora_prediccio": "08:30",
+          "cabal_m3s": 1.26,
+          "model": "M8",
+          "risc": "NORMAL"
+        },
+        {
+          "hores_vista": 4,
+          "hora_prediccio": "09:30",
           "cabal_m3s": 1.49,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 5,
-          "hora_prediccio": "09:30",
-          "cabal_m3s": 1.52,
+          "hora_prediccio": "10:30",
+          "cabal_m3s": 1.37,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 6,
-          "hora_prediccio": "10:30",
-          "cabal_m3s": 1.55,
+          "hora_prediccio": "11:30",
+          "cabal_m3s": 1.4,
           "model": "M8",
           "risc": "NORMAL"
         }
