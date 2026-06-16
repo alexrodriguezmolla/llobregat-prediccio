@@ -431,6 +431,15 @@ function renderitzarPanell(dades) {
       ? new Date(punt.timestamp_fitxer).toLocaleString("ca-ES", { hour: "2-digit", minute: "2-digit", day: "2-digit", month: "2-digit" })
       : "—";
 
+    const horaAPI = (() => {
+      if (!punt.prediccions || punt.prediccions.length === 0) return "—";
+      const horaP1 = punt.prediccions[0].hora_prediccio; // format "HH:MM"
+      const [h, m] = horaP1.split(":").map(Number);
+      const d = new Date();
+      d.setHours(h - 1, m, 0, 0);
+      return d.toLocaleString("ca-ES", { hour: "2-digit", minute: "2-digit", day: "2-digit", month: "2-digit" });
+    })();
+
     // ── Graella de prediccions ──
     let cellesHTML = punt.prediccions.map(p => {
       const nivell = calcularNivell(p.cabal_m3s, punt.llindars);
@@ -455,7 +464,8 @@ function renderitzarPanell(dades) {
             <span class="punt-dot" style="background:${riscMax === "CRITIC" ? "var(--red)" : "var(--blue)"}"></span>
             ${punt.nom}
           </div>
-          <div class="punt-ts">Fitxer: ${tsNet}</div>
+          <div class="punt-ts">${tsNet}</div>
+          <div class="punt-ts" style="margin-top:4px">Última actualització API: ${horaAPI}</div>
         </div>
         <span class="risc-badge risc-${riscMax}">${riscMax === "CRITIC" ? "⚠ CRÍTIC" : "✓ NORMAL"}</span>
       </div>
