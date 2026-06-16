@@ -1,5 +1,37 @@
 {
-  "actualitzat": "2026-06-16T11:46:47.234612Z",
+  "actualitzat": "2026-06-16T11:48:09.177729Z",
+  "embassaments": [
+    {
+      "nom": "la Baells",
+      "coord": {
+        "lat": 42.0897,
+        "lon": 1.8682
+      },
+      "capacitat_hm3": 108.71,
+      "volum_hm3": null,
+      "pct_omplim": null
+    },
+    {
+      "nom": "la Llosa del Cavall",
+      "coord": {
+        "lat": 42.0275,
+        "lon": 1.7969
+      },
+      "capacitat_hm3": 71.56,
+      "volum_hm3": 70.895,
+      "pct_omplim": 99.071
+    },
+    {
+      "nom": "Sant Ponç",
+      "coord": {
+        "lat": 41.9681,
+        "lon": 1.6019
+      },
+      "capacitat_hm3": 24.41,
+      "volum_hm3": 23.144,
+      "pct_omplim": 94.814
+    }
+  ],
   "punts": [
     {
       "id": "martorell",
@@ -13,7 +45,8 @@
         "ALERTA": 56.0,
         "ALERTA_MAXIMA": 144.9
       },
-      "timestamp_fitxer": "2026-06-16T13:46:00",
+      "cabal_actual": null,
+      "timestamp_fitxer": "2026-06-16T13:48:00",
       "prediccions": [
         {
           "hores_vista": 1,
@@ -71,6 +104,7 @@
         "ALERTA": 999.9,
         "ALERTA_MAXIMA": 999.9
       },
+      "cabal_actual": null,
       "timestamp_fitxer": "2026-06-16T13:16:00",
       "prediccions": [
         {
