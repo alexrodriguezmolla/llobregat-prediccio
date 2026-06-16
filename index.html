@@ -375,7 +375,38 @@ function crearIconaMarker(punt) {
   return L.divIcon({ html, className: "", iconAnchor: [65, 72] });
 }
 
+const markersEmb = {};
+
 function actualitzarMarcadors(dades) {
+  // ── Embassaments ──
+  if (dades.embassaments) {
+    dades.embassaments.forEach(emb => {
+      const pct  = emb.pct_omplim != null ? emb.pct_omplim.toFixed(1) : "—";
+      const vol  = emb.volum_hm3  != null ? emb.volum_hm3.toFixed(2)  : "—";
+      const color = emb.pct_omplim == null ? "#7d8590" :
+                    emb.pct_omplim > 70 ? "#3fb950" :
+                    emb.pct_omplim > 40 ? "#d29922" : "#f85149";
+      const html = `
+        <div class="marker-wrap">
+          <div class="marker-bubble" style="border-color:${color};min-width:120px">
+            <div class="marker-nom">🏞 ${emb.nom}</div>
+            <div class="marker-val" style="color:${color}">${pct}%</div>
+            <div class="marker-sub">${vol} hm³</div>
+          </div>
+          <div class="marker-stem" style="background:${color}"></div>
+          <div class="marker-pin" style="background:${color}"></div>
+        </div>`;
+      const icona = L.divIcon({ html, className: "", iconAnchor: [60, 72] });
+      const latlng = [emb.coord.lat, emb.coord.lon];
+      if (markersEmb[emb.nom]) {
+        markersEmb[emb.nom].setLatLng(latlng).setIcon(icona);
+      } else {
+        markersEmb[emb.nom] = L.marker(latlng, { icon: icona }).addTo(map);
+      }
+    });
+  }
+
+  // ── Punts de predicció ──
   dades.punts.forEach(punt => {
     const icona = crearIconaMarker(punt);
     if (!icona) return;
@@ -462,22 +493,33 @@ function renderitzarPanell(dades) {
         <span class="risc-badge risc-${riscMax}">${riscMax === "CRITIC" ? "⚠ CRÍTIC" : "✓ NORMAL"}</span>
       </div>
       <div class="pred-grid">${cellesHTML}</div>
+      ${punt.cabal_actual != null ? `
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;background:var(--surface2);border:1px solid var(--border);border-radius:var(--radius);padding:10px 14px">
+        <div style="font-size:0.75rem;color:var(--text-muted);flex:1">Cabal actual</div>
+        <div style="font-family:var(--mono);font-size:1.2rem;font-weight:700;color:var(--text)">${punt.cabal_actual.toFixed(2)}</div>
+        <div style="font-size:0.7rem;color:var(--text-muted)">m³/s</div>
+      </div>` : ""}
       <div class="chart-wrap">
         <canvas id="chart-${punt.id}"></canvas>
-      </div>`;
+      </div>
     panel.appendChild(card);
 
     // ── Gràfica ──
     const ctx    = document.getElementById(`chart-${punt.id}`).getContext("2d");
-    const labels = punt.prediccions.map(p => `+${p.hores_vista}h\n${p.hora_prediccio}`);
-    const vals   = punt.prediccions.map(p => p.cabal_m3s);
-   const colors = punt.prediccions.map(p => {
+    const cabalAra = punt.cabal_actual;
+    const labelAra = cabalAra != null ? [`+0h\nara`] : [];
+    const valAra   = cabalAra != null ? [cabalAra] : [];
+    const colorAra = cabalAra != null ? ["rgba(125,133,144,0.7)"] : [];
+
+    const labels = [...labelAra, ...punt.prediccions.map(p => `+${p.hores_vista}h\n${p.hora_prediccio}`)];
+    const vals   = [...valAra,   ...punt.prediccions.map(p => p.cabal_m3s)];
+    const colors = [...colorAra, ...punt.prediccions.map(p => {
       const nivell = calcularNivell(p.cabal_m3s, punt.llindars);
       return nivell === "ALERTA_MAXIMA"    ? "rgba(248,81,73,0.85)" :
              nivell === "ALERTA"           ? "rgba(224,123,58,0.85)" :
              nivell === "CARREGA_ELEVADA"  ? "rgba(210,153,34,0.85)" :
                                              "rgba(47,129,247,0.85)";
-    });
+    })];
     const llindar = punt.llindars?.ALERTA_MAXIMA ?? 999;
 
     if (charts[punt.id]) charts[punt.id].destroy();
