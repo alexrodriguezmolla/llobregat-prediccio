@@ -1,5 +1,5 @@
 {
-  "actualitzat": "2026-06-16T23:49:18.639956Z",
+  "actualitzat": "2026-06-17T00:20:19.365032Z",
   "embassaments": [
     {
       "nom": "La Baells",
@@ -18,8 +18,8 @@
         "lon": 1.7969
       },
       "capacitat_hm3": 71.56,
-      "volum_hm3": 70.874,
-      "pct_omplim": 99.041
+      "volum_hm3": 70.876,
+      "pct_omplim": 99.044
     },
     {
       "nom": "Sant Ponç",
@@ -46,47 +46,47 @@
         "ALERTA_MAXIMA": 144.9
       },
       "cabal_actual": null,
-      "timestamp_fitxer": "2026-06-17T01:48:00",
+      "timestamp_fitxer": "2026-06-17T02:19:00",
       "prediccions": [
         {
           "hores_vista": 1,
-          "hora_prediccio": "02:30",
+          "hora_prediccio": "03:00",
           "cabal_m3s": 0.89,
           "model": "MAR",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 2,
-          "hora_prediccio": "03:30",
+          "hora_prediccio": "04:00",
           "cabal_m3s": 1.07,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 3,
-          "hora_prediccio": "04:30",
+          "hora_prediccio": "05:00",
           "cabal_m3s": 1.05,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 4,
-          "hora_prediccio": "05:30",
-          "cabal_m3s": 1.09,
+          "hora_prediccio": "06:00",
+          "cabal_m3s": 1.1,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 5,
-          "hora_prediccio": "06:30",
+          "hora_prediccio": "07:00",
           "cabal_m3s": 1.0,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 6,
-          "hora_prediccio": "07:30",
-          "cabal_m3s": 0.98,
+          "hora_prediccio": "08:00",
+          "cabal_m3s": 0.97,
           "model": "M8",
           "risc": "NORMAL"
         }
@@ -105,7 +105,7 @@
         "ALERTA_MAXIMA": 999.9
       },
       "cabal_actual": null,
-      "timestamp_fitxer": "2026-06-17T01:49:00",
+      "timestamp_fitxer": "2026-06-17T02:20:00",
       "prediccions": [
         {
           "hores_vista": 1,
