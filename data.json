@@ -1,5 +1,5 @@
 {
-  "actualitzat": "2026-06-17T09:39:24.066108Z",
+  "actualitzat": "2026-06-17T10:10:28.222065Z",
   "embassaments": [
     {
       "nom": "La Baells",
@@ -18,8 +18,8 @@
         "lon": 1.7969
       },
       "capacitat_hm3": 71.56,
-      "volum_hm3": 70.876,
-      "pct_omplim": 99.044
+      "volum_hm3": 70.879,
+      "pct_omplim": 99.048
     },
     {
       "nom": "Sant Ponç",
@@ -46,47 +46,47 @@
         "ALERTA_MAXIMA": 144.9
       },
       "cabal_actual": null,
-      "timestamp_fitxer": "2026-06-17T11:38:00",
+      "timestamp_fitxer": "2026-06-17T12:09:00",
       "prediccions": [
         {
           "hores_vista": 1,
-          "hora_prediccio": "12:30",
-          "cabal_m3s": 0.91,
+          "hora_prediccio": "13:00",
+          "cabal_m3s": 0.93,
           "model": "MAR",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 2,
-          "hora_prediccio": "13:30",
-          "cabal_m3s": 1.08,
+          "hora_prediccio": "14:00",
+          "cabal_m3s": 1.18,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 3,
-          "hora_prediccio": "14:30",
-          "cabal_m3s": 1.07,
+          "hora_prediccio": "15:00",
+          "cabal_m3s": 1.12,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 4,
-          "hora_prediccio": "15:30",
-          "cabal_m3s": 1.09,
+          "hora_prediccio": "16:00",
+          "cabal_m3s": 1.13,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 5,
-          "hora_prediccio": "16:30",
-          "cabal_m3s": 1.03,
+          "hora_prediccio": "17:00",
+          "cabal_m3s": 1.32,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 6,
-          "hora_prediccio": "17:30",
-          "cabal_m3s": 1.02,
+          "hora_prediccio": "18:00",
+          "cabal_m3s": 1.26,
           "model": "M8",
           "risc": "NORMAL"
         }
@@ -105,7 +105,7 @@
         "ALERTA_MAXIMA": 999.9
       },
       "cabal_actual": null,
-      "timestamp_fitxer": "2026-06-17T11:39:00",
+      "timestamp_fitxer": "2026-06-17T12:10:00",
       "prediccions": [
         {
           "hores_vista": 1,
