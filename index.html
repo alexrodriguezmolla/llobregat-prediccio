@@ -508,9 +508,9 @@ function renderitzarPanell(dades) {
       (punt.cabal_actual != null ? '<div class="cabal-actual-box"><div class="cabal-actual-label">Cabal actual</div><div class="cabal-actual-val">' + punt.cabal_actual.toFixed(2) + '</div><div class="cabal-actual-unit">m\u00b3/s</div></div>' : '') +
       '<div class="chart-wrap"><canvas id="chart-' + punt.id + '"></canvas></div>' +
 (() => {
-  if (!punt.timestamp_fitxer) return '';
-  const horaAPI = new Date(punt.timestamp_fitxer).toLocaleString("ca-ES", { hour: "2-digit", minute: "2-digit", day: "2-digit", month: "2-digit" });
-  return '<div style="font-size:0.68rem;color:var(--text-muted);padding:6px 2px 2px;font-family:var(--mono);">Última actualització API: ' + horaAPI + '</div>';
+  if (!punt.ultima_dada_api) return '';
+  const horaAPI = new Date(punt.ultima_dada_api).toLocaleString("ca-ES", { hour: "2-digit", minute: "2-digit", day: "2-digit", month: "2-digit" });
+  return '<div style="font-size:0.68rem;color:var(--text-muted);padding:6px 2px 2px;font-family:var(--mono);">Última dada API: ' + horaAPI + '</div>';
 })() +
 '</div>';
 
