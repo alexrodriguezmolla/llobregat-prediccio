@@ -137,12 +137,11 @@
       padding: 18px 18px 20px;
     }
 
-    .punt-header {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      margin-bottom: 14px;
-    }
+    .punt-header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 14px; cursor: pointer; }
+    .punt-content { overflow: hidden; max-height: 0; transition: max-height 0.3s ease; }
+    .punt-content.obert { max-height: 600px; }
+    .punt-chevron { font-size: 0.7rem; color: var(--text-muted); transition: transform 0.25s; margin-left: 8px; }
+    .punt-chevron.obert { transform: rotate(180deg); }
 
     .punt-nom {
       font-size: 0.95rem;
@@ -493,30 +492,34 @@ function renderitzarPanell(dades) {
 
     const card = document.createElement("div");
     card.className = "punt-card";
-    card.id = `card-${punt.id}`;
-    card.innerHTML = `
-      <div class="punt-header">
-        <div>
-          <div class="punt-nom">
-            <span class="punt-dot" style="background:${riscMax === "CRITIC" ? "var(--red)" : "var(--blue)"}"></span>
-            ${punt.nom}
-          </div>
-          <div class="punt-ts">${tsNet}</div>
-        </div>
-        <span class="risc-badge risc-${riscMax}">${riscMax === "CRITIC" ? "⚠ CRÍTIC" : "✓ NORMAL"}</span>
-      </div>
-      <div class="pred-grid">${cellesHTML}</div>
-      ${punt.cabal_actual != null ? `
-      <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;background:var(--surface2);border:1px solid var(--border);border-radius:var(--radius);padding:10px 14px">
-        <div style="font-size:0.75rem;color:var(--text-muted);flex:1">Cabal actual</div>
-        <div style="font-family:var(--mono);font-size:1.2rem;font-weight:700;color:var(--text)">${punt.cabal_actual.toFixed(2)}</div>
-        <div style="font-size:0.7rem;color:var(--text-muted)">m³/s</div>
-      </div>` : ""}
-      <div class="chart-wrap">
-        <canvas id="chart-${punt.id}"></canvas>
-      </div>
-    `;                          
+    card.id = "card-" + punt.id;
+    card.innerHTML =
+      '<div class="punt-header" id="header-' + punt.id + '"><div>' +
+      '<div class="punt-nom"><span class="punt-dot" style="background:' + (riscMax === "CRITIC" ? "var(--red)" : "var(--blue)") + '"></span>' + punt.nom + '</div>' +
+      '<div class="punt-ts">' + tsNet + '</div>' +
+      '</div>' +
+      '<div style="display:flex;align-items:center;">' +
+      '<span class="risc-badge risc-' + riscMax + '">' + (riscMax === "CRITIC" ? "⚠ CRÍTIC" : "✓ NORMAL") + '</span>' +
+      '<span class="punt-chevron" id="chevron-' + punt.id + '">▾</span>' +
+      '</div>' +
+      '</div>' +
+      '<div class="punt-content" id="content-' + punt.id + '">' +
+      '<div class="pred-grid">' + cellesHTML + '</div>' +
+      (punt.cabal_actual != null ? '<div class="cabal-actual-box"><div class="cabal-actual-label">Cabal actual</div><div class="cabal-actual-val">' + punt.cabal_actual.toFixed(2) + '</div><div class="cabal-actual-unit">m\u00b3/s</div></div>' : '') +
+      '<div class="chart-wrap"><canvas id="chart-' + punt.id + '"></canvas></div>' +
+      '</div>';
+
     panel.appendChild(card);
+
+    document.getElementById("header-" + punt.id).addEventListener("click", function() {
+      const content = document.getElementById("content-" + punt.id);
+      const chevron = document.getElementById("chevron-" + punt.id);
+      content.classList.toggle("obert");
+      chevron.classList.toggle("obert");
+      if (content.classList.contains("obert") && charts[punt.id]) {
+        setTimeout(function() { charts[punt.id].resize(); }, 310);
+      }
+    });
 
     // ── Gràfica ──
     const cabalAra = punt.cabal_actual;
