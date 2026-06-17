@@ -344,12 +344,13 @@ const CONFIG_NIVELL = {
 //  MAPA
 // ─────────────────────────────────────────────
 
-const map = L.map("map", {
-  center: [41.43, 1.97],
-  zoom: 11,
-  zoomControl: true
-});
+const map = L.map("map", { center: [41.43, 1.97], zoom: 11, zoomControl: true });
 
+function escalaPerZoom() {
+  const z = map.getZoom();
+  // A zoom 13+ escala 1; per cada nivell menys, redueix un 15%
+  return Math.max(0.45, Math.min(1, 1 - (13 - z) * 0.15));
+}
 L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
   attribution: '© <a href="https://carto.com/">CARTO</a> © <a href="https://openstreetmap.org">OpenStreetMap</a>',
   maxZoom: 18
@@ -357,21 +358,33 @@ L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
 
 const markers = {};
 
+function trobarPredDestacada(punt) {
+  // Retorna la predicció a mostrar al mapa:
+  // la primera que arribi a ALERTA o ALERTA_MAXIMA, si no n'hi ha cap, la de cabal més alt
+  for (let i = 0; i < punt.prediccions.length; i++) {
+    const p = punt.prediccions[i];
+    const nivell = calcularNivell(p.cabal_m3s, punt.llindars);
+    if (nivell === "ALERTA" || nivell === "ALERTA_MAXIMA") return p;
+  }
+  return punt.prediccions.reduce((max, p) => p.cabal_m3s > max.cabal_m3s ? p : max, punt.prediccions[0]);
+}
+
 function crearIconaMarker(punt) {
   if (!punt.prediccions || punt.prediccions.length === 0) return null;
-  const p1    = punt.prediccions[0];
-  const esCrit = p1.risc === "CRÍTIC" || p1.risc === "CRITIC";
-  const html = `
-    <div class="marker-wrap">
-      <div class="marker-bubble ${esCrit ? "critic" : ""}">
-        <div class="marker-nom">${punt.nom}</div>
-        <div class="marker-val">${p1.cabal_m3s.toFixed(1)}</div>
-        <div class="marker-sub">m³/s · +1h (${p1.hora_prediccio})</div>
-        <div class="marker-risc ${esCrit ? "CRITIC" : "NORMAL"}">${esCrit ? "⚠ CRÍTIC" : "✓ NORMAL"}</div>
-      </div>
-      <div class="marker-stem"></div>
-      <div class="marker-pin"></div>
-    </div>`;
+  const pDestacada = trobarPredDestacada(punt);
+  const nivell = calcularNivell(pDestacada.cabal_m3s, punt.llindars);
+  const esCrit = nivell === "ALERTA" || nivell === "ALERTA_MAXIMA";
+  const escala = escalaPerZoom();
+  const html   = `<div class="marker-wrap" style="transform:scale(${escala});transform-origin:bottom center;">
+    <div class="marker-bubble ${esCrit ? "critic" : ""}">
+      <div class="marker-nom">${punt.nom}</div>
+      <div class="marker-val">${pDestacada.cabal_m3s.toFixed(1)}</div>
+      <div class="marker-sub">m\u00b3/s \u00b7 +${pDestacada.hores_vista}h (${pDestacada.hora_prediccio})</div>
+      <div class="marker-risc ${esCrit ? "CRITIC" : "NORMAL"}">${CONFIG_NIVELL[nivell].label}</div>
+    </div>
+    <div class="marker-stem"></div>
+    <div class="marker-pin"></div>
+  </div>`;
   return L.divIcon({ html, className: "", iconAnchor: [65, 72] });
 }
 
@@ -386,13 +399,13 @@ function actualitzarMarcadors(dades) {
       const color = emb.pct_omplim == null ? "#7d8590" :
                     emb.pct_omplim > 70 ? "#3fb950" :
                     emb.pct_omplim > 40 ? "#d29922" : "#f85149";
-      const html = `
-        <div class="marker-wrap">
-          <div class="marker-bubble" style="border-color:${color};min-width:120px">
-            <div class="marker-nom">${emb.nom}</div>
-            <div class="marker-val" style="color:${color}">${pct}%</div>
-            <div class="marker-sub">${vol} hm³</div>
-          </div>
+      const escala = escalaPerZoom();
+      const html = `<div class="marker-wrap" style="transform:scale(${escala});transform-origin:bottom center;">
+        <div class="marker-bubble" style="min-width:120px">
+          <div class="marker-nom">\uD83C\uDFDE ${emb.nom}</div>
+          <div class="marker-val">${vol} hm\u00b3</div>
+          <div class="marker-sub">${pct}% del total</div>
+        </div>
           <div class="marker-stem" style="background:${color}"></div>
           <div class="marker-pin" style="background:${color}"></div>
         </div>`;
@@ -599,7 +612,7 @@ async function carregarDades() {
     const r = await fetch(DATA_URL + "?t=" + Date.now());
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
     const dades = await r.json();
-
+    ultimesDades = dades;
     actualitzarMarcadors(dades);
     renderitzarPanell(dades);
 
@@ -619,6 +632,11 @@ async function carregarDades() {
 // Càrrega inicial + interval
 carregarDades();
 setInterval(carregarDades, INTERVAL_REFRESC_MS);
+
+let ultimesDades = null;
+map.on("zoomend", function() {
+  if (ultimesDades) actualitzarMarcadors(ultimesDades);
+});
 </script>
 
 </body>
