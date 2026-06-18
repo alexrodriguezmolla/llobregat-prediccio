@@ -1,5 +1,5 @@
 {
-  "actualitzat": "2026-06-18T12:54:18.062109Z",
+  "actualitzat": "2026-06-18T13:25:18.031174Z",
   "embassaments": [
     {
       "nom": "La Baells",
@@ -28,8 +28,8 @@
         "lon": 1.605414
       },
       "capacitat_hm3": 24.49,
-      "volum_hm3": 23.061,
-      "pct_omplim": 94.474
+      "volum_hm3": 23.048,
+      "pct_omplim": 94.42
     }
   ],
   "punts": [
@@ -47,7 +47,7 @@
       },
       "cabal_actual": null,
       "ultima_dada_api": null,
-      "timestamp_fitxer": "2026-06-18T14:53:00",
+      "timestamp_fitxer": "2026-06-18T15:24:00",
       "prediccions": [
         {
           "hores_vista": 1,
@@ -107,7 +107,7 @@
       },
       "cabal_actual": null,
       "ultima_dada_api": null,
-      "timestamp_fitxer": "2026-06-18T14:54:00",
+      "timestamp_fitxer": "2026-06-18T15:25:00",
       "prediccions": [
         {
           "hores_vista": 1,
