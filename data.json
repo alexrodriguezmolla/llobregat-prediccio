@@ -1,5 +1,5 @@
 {
-  "actualitzat": "2026-06-19T04:57:06.290248Z",
+  "actualitzat": "2026-06-19T05:28:09.150508Z",
   "embassaments": [
     {
       "nom": "La Baells",
@@ -47,7 +47,7 @@
       },
       "cabal_actual": null,
       "ultima_dada_api": null,
-      "timestamp_fitxer": "2026-06-19T06:56:00",
+      "timestamp_fitxer": "2026-06-19T07:27:00",
       "prediccions": [
         {
           "hores_vista": 1,
@@ -107,47 +107,47 @@
       },
       "cabal_actual": null,
       "ultima_dada_api": null,
-      "timestamp_fitxer": "2026-06-19T06:57:00",
+      "timestamp_fitxer": "2026-06-19T07:28:00",
       "prediccions": [
         {
           "hores_vista": 1,
-          "hora_prediccio": "07:00",
-          "cabal_m3s": 7.31,
+          "hora_prediccio": "08:00",
+          "cabal_m3s": 7.25,
           "model": "MAR",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 2,
-          "hora_prediccio": "08:00",
+          "hora_prediccio": "09:00",
           "cabal_m3s": 6.99,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 3,
-          "hora_prediccio": "09:00",
-          "cabal_m3s": 7.02,
+          "hora_prediccio": "10:00",
+          "cabal_m3s": 7.14,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 4,
-          "hora_prediccio": "10:00",
-          "cabal_m3s": 7.31,
+          "hora_prediccio": "11:00",
+          "cabal_m3s": 7.47,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 5,
-          "hora_prediccio": "11:00",
-          "cabal_m3s": 7.2,
+          "hora_prediccio": "12:00",
+          "cabal_m3s": 7.31,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 6,
-          "hora_prediccio": "12:00",
-          "cabal_m3s": 6.82,
+          "hora_prediccio": "13:00",
+          "cabal_m3s": 6.9,
           "model": "M8",
           "risc": "NORMAL"
         }
