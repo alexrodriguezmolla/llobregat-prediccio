@@ -1,5 +1,5 @@
 {
-  "actualitzat": "2026-06-20T07:52:07.391090Z",
+  "actualitzat": "2026-06-20T08:23:07.451161Z",
   "embassaments": [
     {
       "nom": "La Baells",
@@ -47,7 +47,7 @@
       },
       "cabal_actual": null,
       "ultima_dada_api": null,
-      "timestamp_fitxer": "2026-06-20T09:51:00",
+      "timestamp_fitxer": "2026-06-20T10:22:00",
       "prediccions": [
         {
           "hores_vista": 1,
@@ -107,7 +107,7 @@
       },
       "cabal_actual": null,
       "ultima_dada_api": null,
-      "timestamp_fitxer": "2026-06-20T09:52:00",
+      "timestamp_fitxer": "2026-06-20T10:23:00",
       "prediccions": [
         {
           "hores_vista": 1,
