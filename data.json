@@ -1,5 +1,5 @@
 {
-  "actualitzat": "2026-06-20T13:02:54.923177Z",
+  "actualitzat": "2026-06-20T13:33:59.618491Z",
   "embassaments": [
     {
       "nom": "La Baells",
@@ -47,47 +47,47 @@
       },
       "cabal_actual": null,
       "ultima_dada_api": null,
-      "timestamp_fitxer": "2026-06-20T15:02:00",
+      "timestamp_fitxer": "2026-06-20T15:33:00",
       "prediccions": [
         {
           "hores_vista": 1,
-          "hora_prediccio": "15:30",
+          "hora_prediccio": "16:30",
           "cabal_m3s": 0.91,
           "model": "MAR",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 2,
-          "hora_prediccio": "16:30",
-          "cabal_m3s": 1.05,
+          "hora_prediccio": "17:30",
+          "cabal_m3s": 1.04,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 3,
-          "hora_prediccio": "17:30",
-          "cabal_m3s": 1.05,
+          "hora_prediccio": "18:30",
+          "cabal_m3s": 1.03,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 4,
-          "hora_prediccio": "18:30",
-          "cabal_m3s": 0.94,
+          "hora_prediccio": "19:30",
+          "cabal_m3s": 0.97,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 5,
-          "hora_prediccio": "19:30",
-          "cabal_m3s": 0.91,
+          "hora_prediccio": "20:30",
+          "cabal_m3s": 0.93,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 6,
-          "hora_prediccio": "20:30",
-          "cabal_m3s": 0.95,
+          "hora_prediccio": "21:30",
+          "cabal_m3s": 0.96,
           "model": "M8",
           "risc": "NORMAL"
         }
@@ -107,7 +107,7 @@
       },
       "cabal_actual": null,
       "ultima_dada_api": null,
-      "timestamp_fitxer": "2026-06-20T15:02:00",
+      "timestamp_fitxer": "2026-06-20T15:33:00",
       "prediccions": [
         {
           "hores_vista": 1,
