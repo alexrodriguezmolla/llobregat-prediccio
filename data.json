@@ -1,5 +1,5 @@
 {
-  "actualitzat": "2026-06-20T15:07:09.555612Z",
+  "actualitzat": "2026-06-20T15:38:13.118115Z",
   "embassaments": [
     {
       "nom": "La Baells",
@@ -18,8 +18,8 @@
         "lon": 1.598937
       },
       "capacitat_hm3": 71.56,
-      "volum_hm3": 70.833,
-      "pct_omplim": 98.984
+      "volum_hm3": 70.825,
+      "pct_omplim": 98.973
     },
     {
       "nom": "Sant Ponç",
@@ -47,46 +47,46 @@
       },
       "cabal_actual": null,
       "ultima_dada_api": null,
-      "timestamp_fitxer": "2026-06-20T17:06:00",
+      "timestamp_fitxer": "2026-06-20T17:37:00",
       "prediccions": [
         {
           "hores_vista": 1,
-          "hora_prediccio": "17:30",
-          "cabal_m3s": 0.91,
+          "hora_prediccio": "18:30",
+          "cabal_m3s": 0.9,
           "model": "MAR",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 2,
-          "hora_prediccio": "18:30",
+          "hora_prediccio": "19:30",
           "cabal_m3s": 1.04,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 3,
-          "hora_prediccio": "19:30",
-          "cabal_m3s": 1.05,
+          "hora_prediccio": "20:30",
+          "cabal_m3s": 1.04,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 4,
-          "hora_prediccio": "20:30",
-          "cabal_m3s": 1.03,
+          "hora_prediccio": "21:30",
+          "cabal_m3s": 0.98,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 5,
-          "hora_prediccio": "21:30",
+          "hora_prediccio": "22:30",
           "cabal_m3s": 0.94,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 6,
-          "hora_prediccio": "22:30",
+          "hora_prediccio": "23:30",
           "cabal_m3s": 0.95,
           "model": "M8",
           "risc": "NORMAL"
@@ -107,7 +107,7 @@
       },
       "cabal_actual": null,
       "ultima_dada_api": null,
-      "timestamp_fitxer": "2026-06-20T17:07:00",
+      "timestamp_fitxer": "2026-06-20T17:38:00",
       "prediccions": [
         {
           "hores_vista": 1,
