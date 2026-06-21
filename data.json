@@ -1,5 +1,5 @@
 {
-  "actualitzat": "2026-06-21T13:54:09.937668Z",
+  "actualitzat": "2026-06-21T14:25:13.324015Z",
   "embassaments": [
     {
       "nom": "La Baells",
@@ -47,47 +47,47 @@
       },
       "cabal_actual": null,
       "ultima_dada_api": null,
-      "timestamp_fitxer": "2026-06-21T15:53:00",
+      "timestamp_fitxer": "2026-06-21T16:24:00",
       "prediccions": [
         {
           "hores_vista": 1,
-          "hora_prediccio": "16:00",
-          "cabal_m3s": 0.86,
+          "hora_prediccio": "17:00",
+          "cabal_m3s": 0.83,
           "model": "MAR",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 2,
-          "hora_prediccio": "17:00",
-          "cabal_m3s": 1.03,
+          "hora_prediccio": "18:00",
+          "cabal_m3s": 1.02,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 3,
-          "hora_prediccio": "18:00",
-          "cabal_m3s": 1.01,
+          "hora_prediccio": "19:00",
+          "cabal_m3s": 0.99,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 4,
-          "hora_prediccio": "19:00",
-          "cabal_m3s": 0.89,
+          "hora_prediccio": "20:00",
+          "cabal_m3s": 0.91,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 5,
-          "hora_prediccio": "20:00",
-          "cabal_m3s": 0.89,
+          "hora_prediccio": "21:00",
+          "cabal_m3s": 0.9,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 6,
-          "hora_prediccio": "21:00",
-          "cabal_m3s": 0.93,
+          "hora_prediccio": "22:00",
+          "cabal_m3s": 0.92,
           "model": "M8",
           "risc": "NORMAL"
         }
@@ -107,7 +107,7 @@
       },
       "cabal_actual": null,
       "ultima_dada_api": null,
-      "timestamp_fitxer": "2026-06-21T15:54:00",
+      "timestamp_fitxer": "2026-06-21T16:25:00",
       "prediccions": [
         {
           "hores_vista": 1,
