@@ -1,5 +1,5 @@
 {
-  "actualitzat": "2026-06-21T00:26:16.047982Z",
+  "actualitzat": "2026-06-21T00:57:19.588039Z",
   "embassaments": [
     {
       "nom": "La Baells",
@@ -47,47 +47,47 @@
       },
       "cabal_actual": null,
       "ultima_dada_api": null,
-      "timestamp_fitxer": "2026-06-21T02:25:00",
+      "timestamp_fitxer": "2026-06-21T02:56:00",
       "prediccions": [
         {
           "hores_vista": 1,
-          "hora_prediccio": "02:30",
-          "cabal_m3s": 0.81,
+          "hora_prediccio": "03:30",
+          "cabal_m3s": 0.79,
           "model": "MAR",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 2,
-          "hora_prediccio": "03:30",
-          "cabal_m3s": 1.02,
+          "hora_prediccio": "04:30",
+          "cabal_m3s": 1.01,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 3,
-          "hora_prediccio": "04:30",
-          "cabal_m3s": 1.0,
+          "hora_prediccio": "05:30",
+          "cabal_m3s": 0.99,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 4,
-          "hora_prediccio": "05:30",
-          "cabal_m3s": 0.87,
+          "hora_prediccio": "06:30",
+          "cabal_m3s": 0.93,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 5,
-          "hora_prediccio": "06:30",
+          "hora_prediccio": "07:30",
           "cabal_m3s": 0.89,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 6,
-          "hora_prediccio": "07:30",
-          "cabal_m3s": 0.93,
+          "hora_prediccio": "08:30",
+          "cabal_m3s": 0.94,
           "model": "M8",
           "risc": "NORMAL"
         }
@@ -107,7 +107,7 @@
       },
       "cabal_actual": null,
       "ultima_dada_api": null,
-      "timestamp_fitxer": "2026-06-21T02:26:00",
+      "timestamp_fitxer": "2026-06-21T02:57:00",
       "prediccions": [
         {
           "hores_vista": 1,
