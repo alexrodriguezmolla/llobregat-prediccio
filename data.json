@@ -1,5 +1,5 @@
 {
-  "actualitzat": "2026-06-21T08:43:25.639025Z",
+  "actualitzat": "2026-06-21T09:14:29.416709Z",
   "embassaments": [
     {
       "nom": "La Baells",
@@ -47,47 +47,47 @@
       },
       "cabal_actual": null,
       "ultima_dada_api": null,
-      "timestamp_fitxer": "2026-06-21T10:42:00",
+      "timestamp_fitxer": "2026-06-21T11:13:00",
       "prediccions": [
         {
           "hores_vista": 1,
-          "hora_prediccio": "11:00",
-          "cabal_m3s": 0.86,
+          "hora_prediccio": "12:00",
+          "cabal_m3s": 0.87,
           "model": "MAR",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 2,
-          "hora_prediccio": "12:00",
+          "hora_prediccio": "13:00",
           "cabal_m3s": 1.03,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 3,
-          "hora_prediccio": "13:00",
-          "cabal_m3s": 1.0,
+          "hora_prediccio": "14:00",
+          "cabal_m3s": 1.01,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 4,
-          "hora_prediccio": "14:00",
-          "cabal_m3s": 0.93,
+          "hora_prediccio": "15:00",
+          "cabal_m3s": 0.9,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 5,
-          "hora_prediccio": "15:00",
-          "cabal_m3s": 0.92,
+          "hora_prediccio": "16:00",
+          "cabal_m3s": 0.91,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 6,
-          "hora_prediccio": "16:00",
-          "cabal_m3s": 0.96,
+          "hora_prediccio": "17:00",
+          "cabal_m3s": 0.95,
           "model": "M8",
           "risc": "NORMAL"
         }
@@ -107,7 +107,7 @@
       },
       "cabal_actual": null,
       "ultima_dada_api": null,
-      "timestamp_fitxer": "2026-06-21T10:43:00",
+      "timestamp_fitxer": "2026-06-21T11:14:00",
       "prediccions": [
         {
           "hores_vista": 1,
