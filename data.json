@@ -1,5 +1,5 @@
 {
-  "actualitzat": "2026-06-21T21:40:05.666591Z",
+  "actualitzat": "2026-06-21T22:11:08.870249Z",
   "embassaments": [
     {
       "nom": "La Baells",
@@ -47,7 +47,7 @@
       },
       "cabal_actual": null,
       "ultima_dada_api": null,
-      "timestamp_fitxer": "2026-06-21T23:39:00",
+      "timestamp_fitxer": "2026-06-22T00:10:00",
       "prediccions": [
         {
           "hores_vista": 1,
@@ -107,47 +107,47 @@
       },
       "cabal_actual": null,
       "ultima_dada_api": null,
-      "timestamp_fitxer": "2026-06-21T23:40:00",
+      "timestamp_fitxer": "2026-06-22T00:11:00",
       "prediccions": [
         {
           "hores_vista": 1,
-          "hora_prediccio": "2026-06-22",
-          "cabal_m3s": 5.79,
+          "hora_prediccio": "01:00",
+          "cabal_m3s": 5.67,
           "model": "MAR",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 2,
-          "hora_prediccio": "01:00",
-          "cabal_m3s": 6.22,
+          "hora_prediccio": "02:00",
+          "cabal_m3s": 5.62,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 3,
-          "hora_prediccio": "02:00",
-          "cabal_m3s": 5.66,
+          "hora_prediccio": "03:00",
+          "cabal_m3s": 5.44,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 4,
-          "hora_prediccio": "03:00",
-          "cabal_m3s": 5.75,
+          "hora_prediccio": "04:00",
+          "cabal_m3s": 5.67,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 5,
-          "hora_prediccio": "04:00",
-          "cabal_m3s": 5.79,
+          "hora_prediccio": "05:00",
+          "cabal_m3s": 5.72,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 6,
-          "hora_prediccio": "05:00",
-          "cabal_m3s": 5.85,
+          "hora_prediccio": "06:00",
+          "cabal_m3s": 5.77,
           "model": "M8",
           "risc": "NORMAL"
         }
