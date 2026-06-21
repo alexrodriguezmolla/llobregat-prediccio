@@ -1,5 +1,5 @@
 {
-  "actualitzat": "2026-06-21T20:06:54.435102Z",
+  "actualitzat": "2026-06-21T20:37:58.062047Z",
   "embassaments": [
     {
       "nom": "La Baells",
@@ -47,46 +47,46 @@
       },
       "cabal_actual": null,
       "ultima_dada_api": null,
-      "timestamp_fitxer": "2026-06-21T22:06:00",
+      "timestamp_fitxer": "2026-06-21T22:37:00",
       "prediccions": [
         {
           "hores_vista": 1,
-          "hora_prediccio": "22:30",
-          "cabal_m3s": 0.79,
+          "hora_prediccio": "23:30",
+          "cabal_m3s": 0.81,
           "model": "MAR",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 2,
-          "hora_prediccio": "23:30",
+          "hora_prediccio": "00:30",
           "cabal_m3s": 0.89,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 3,
-          "hora_prediccio": "00:30",
-          "cabal_m3s": 0.87,
+          "hora_prediccio": "01:30",
+          "cabal_m3s": 0.89,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 4,
-          "hora_prediccio": "01:30",
-          "cabal_m3s": 0.86,
-          "model": "M8",
-          "risc": "NORMAL"
-        },
-        {
-          "hores_vista": 5,
           "hora_prediccio": "02:30",
           "cabal_m3s": 0.89,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
-          "hores_vista": 6,
+          "hores_vista": 5,
           "hora_prediccio": "03:30",
+          "cabal_m3s": 0.89,
+          "model": "M8",
+          "risc": "NORMAL"
+        },
+        {
+          "hores_vista": 6,
+          "hora_prediccio": "04:30",
           "cabal_m3s": 0.89,
           "model": "M8",
           "risc": "NORMAL"
@@ -107,7 +107,7 @@
       },
       "cabal_actual": null,
       "ultima_dada_api": null,
-      "timestamp_fitxer": "2026-06-21T22:06:00",
+      "timestamp_fitxer": "2026-06-21T22:37:00",
       "prediccions": [
         {
           "hores_vista": 1,
