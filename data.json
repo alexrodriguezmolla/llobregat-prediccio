@@ -1,5 +1,5 @@
 {
-  "actualitzat": "2026-06-21T16:29:26.320222Z",
+  "actualitzat": "2026-06-21T17:00:30.302629Z",
   "embassaments": [
     {
       "nom": "La Baells",
@@ -18,8 +18,8 @@
         "lon": 1.598937
       },
       "capacitat_hm3": 71.56,
-      "volum_hm3": 70.793,
-      "pct_omplim": 98.928
+      "volum_hm3": 70.796,
+      "pct_omplim": 98.932
     },
     {
       "nom": "Sant Ponç",
@@ -47,7 +47,7 @@
       },
       "cabal_actual": null,
       "ultima_dada_api": null,
-      "timestamp_fitxer": "2026-06-21T18:28:00",
+      "timestamp_fitxer": "2026-06-21T18:59:00",
       "prediccions": [
         {
           "hores_vista": 1,
@@ -107,47 +107,47 @@
       },
       "cabal_actual": null,
       "ultima_dada_api": null,
-      "timestamp_fitxer": "2026-06-21T18:29:00",
+      "timestamp_fitxer": "2026-06-21T19:00:00",
       "prediccions": [
         {
           "hores_vista": 1,
-          "hora_prediccio": "18:30",
-          "cabal_m3s": 6.06,
+          "hora_prediccio": "19:30",
+          "cabal_m3s": 6.03,
           "model": "MAR",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 2,
-          "hora_prediccio": "19:30",
-          "cabal_m3s": 6.33,
+          "hora_prediccio": "20:30",
+          "cabal_m3s": 6.28,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 3,
-          "hora_prediccio": "20:30",
-          "cabal_m3s": 5.66,
+          "hora_prediccio": "21:30",
+          "cabal_m3s": 5.76,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 4,
-          "hora_prediccio": "21:30",
-          "cabal_m3s": 5.7,
+          "hora_prediccio": "22:30",
+          "cabal_m3s": 5.85,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 5,
-          "hora_prediccio": "22:30",
-          "cabal_m3s": 5.42,
+          "hora_prediccio": "23:30",
+          "cabal_m3s": 5.94,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 6,
-          "hora_prediccio": "23:30",
-          "cabal_m3s": 5.63,
+          "hora_prediccio": "00:30",
+          "cabal_m3s": 5.98,
           "model": "M8",
           "risc": "NORMAL"
         }
