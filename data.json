@@ -1,5 +1,5 @@
 {
-  "actualitzat": "2026-06-23T01:38:19.031678Z",
+  "actualitzat": "2026-06-23T02:09:19.905305Z",
   "embassaments": [
     {
       "nom": "La Baells",
@@ -8,8 +8,8 @@
         "lon": 1.880073
       },
       "capacitat_hm3": 108.71,
-      "volum_hm3": 101.408,
-      "pct_omplim": 93.283
+      "volum_hm3": null,
+      "pct_omplim": null
     },
     {
       "nom": "La Llosa del Cavall",
@@ -18,8 +18,8 @@
         "lon": 1.598937
       },
       "capacitat_hm3": 71.56,
-      "volum_hm3": 70.772,
-      "pct_omplim": 98.899
+      "volum_hm3": null,
+      "pct_omplim": null
     },
     {
       "nom": "Sant Ponç",
@@ -28,8 +28,8 @@
         "lon": 1.605414
       },
       "capacitat_hm3": 24.49,
-      "volum_hm3": 22.841,
-      "pct_omplim": 93.572
+      "volum_hm3": null,
+      "pct_omplim": null
     }
   ],
   "punts": [
@@ -47,7 +47,7 @@
       },
       "cabal_actual": null,
       "ultima_dada_api": null,
-      "timestamp_fitxer": "2026-06-23T03:37:00",
+      "timestamp_fitxer": "2026-06-23T04:08:00",
       "prediccions": [
         {
           "hores_vista": 1,
@@ -107,7 +107,7 @@
       },
       "cabal_actual": null,
       "ultima_dada_api": null,
-      "timestamp_fitxer": "2026-06-23T03:38:00",
+      "timestamp_fitxer": "2026-06-23T04:09:00",
       "prediccions": [
         {
           "hores_vista": 1,
