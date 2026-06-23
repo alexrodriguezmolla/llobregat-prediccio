@@ -1,5 +1,5 @@
 {
-  "actualitzat": "2026-06-23T23:19:15.606447Z",
+  "actualitzat": "2026-06-23T23:50:03.380940Z",
   "embassaments": [
     {
       "nom": "La Baells",
@@ -47,7 +47,7 @@
       },
       "cabal_actual": null,
       "ultima_dada_api": null,
-      "timestamp_fitxer": "2026-06-24T01:18:00",
+      "timestamp_fitxer": "2026-06-24T01:49:00",
       "prediccions": [
         {
           "hores_vista": 1,
@@ -107,47 +107,47 @@
       },
       "cabal_actual": null,
       "ultima_dada_api": null,
-      "timestamp_fitxer": "2026-06-24T01:19:00",
+      "timestamp_fitxer": "2026-06-24T01:49:00",
       "prediccions": [
         {
           "hores_vista": 1,
-          "hora_prediccio": "01:30",
+          "hora_prediccio": "02:30",
           "cabal_m3s": 6.98,
           "model": "MAR",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 2,
-          "hora_prediccio": "02:30",
-          "cabal_m3s": 6.02,
+          "hora_prediccio": "03:30",
+          "cabal_m3s": 6.23,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 3,
-          "hora_prediccio": "03:30",
-          "cabal_m3s": 5.87,
+          "hora_prediccio": "04:30",
+          "cabal_m3s": 6.14,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 4,
-          "hora_prediccio": "04:30",
-          "cabal_m3s": 6.04,
+          "hora_prediccio": "05:30",
+          "cabal_m3s": 6.22,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 5,
-          "hora_prediccio": "05:30",
-          "cabal_m3s": 6.29,
+          "hora_prediccio": "06:30",
+          "cabal_m3s": 6.36,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 6,
-          "hora_prediccio": "06:30",
-          "cabal_m3s": 6.08,
+          "hora_prediccio": "07:30",
+          "cabal_m3s": 6.13,
           "model": "M8",
           "risc": "NORMAL"
         }
