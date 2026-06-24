@@ -1,5 +1,5 @@
 {
-  "actualitzat": "2026-06-24T19:20:47.317614Z",
+  "actualitzat": "2026-06-24T19:51:33.085922Z",
   "embassaments": [
     {
       "nom": "La Baells",
@@ -8,8 +8,8 @@
         "lon": 1.880073
       },
       "capacitat_hm3": 108.71,
-      "volum_hm3": 101.027,
-      "pct_omplim": 92.933
+      "volum_hm3": 100.993,
+      "pct_omplim": 92.901
     },
     {
       "nom": "La Llosa del Cavall",
@@ -47,7 +47,7 @@
       },
       "cabal_actual": null,
       "ultima_dada_api": null,
-      "timestamp_fitxer": "2026-06-24T21:20:00",
+      "timestamp_fitxer": "2026-06-24T21:51:00",
       "prediccions": [
         {
           "hores_vista": 1,
@@ -107,7 +107,7 @@
       },
       "cabal_actual": null,
       "ultima_dada_api": null,
-      "timestamp_fitxer": "2026-06-24T21:20:00",
+      "timestamp_fitxer": "2026-06-24T21:51:00",
       "prediccions": [
         {
           "hores_vista": 1,
