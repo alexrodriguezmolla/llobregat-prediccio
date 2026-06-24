@@ -1,5 +1,5 @@
 {
-  "actualitzat": "2026-06-24T10:06:11.703660Z",
+  "actualitzat": "2026-06-24T10:37:02.649280Z",
   "embassaments": [
     {
       "nom": "La Baells",
@@ -18,8 +18,8 @@
         "lon": 1.598937
       },
       "capacitat_hm3": 71.56,
-      "volum_hm3": 70.748,
-      "pct_omplim": 98.865
+      "volum_hm3": 70.753,
+      "pct_omplim": 98.872
     },
     {
       "nom": "Sant Ponç",
@@ -47,7 +47,7 @@
       },
       "cabal_actual": null,
       "ultima_dada_api": null,
-      "timestamp_fitxer": "2026-06-24T12:05:00",
+      "timestamp_fitxer": "2026-06-24T12:36:00",
       "prediccions": [
         {
           "hores_vista": 1,
@@ -107,7 +107,7 @@
       },
       "cabal_actual": null,
       "ultima_dada_api": null,
-      "timestamp_fitxer": "2026-06-24T12:06:00",
+      "timestamp_fitxer": "2026-06-24T12:36:00",
       "prediccions": [
         {
           "hores_vista": 1,
