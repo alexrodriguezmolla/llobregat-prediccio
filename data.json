@@ -1,5 +1,5 @@
 {
-  "actualitzat": "2026-06-25T04:04:33.023260Z",
+  "actualitzat": "2026-06-25T04:35:22.002816Z",
   "embassaments": [
     {
       "nom": "La Baells",
@@ -28,8 +28,8 @@
         "lon": 1.605414
       },
       "capacitat_hm3": 24.49,
-      "volum_hm3": 22.759,
-      "pct_omplim": 93.236
+      "volum_hm3": 22.746,
+      "pct_omplim": 93.183
     }
   ],
   "punts": [
@@ -47,46 +47,46 @@
       },
       "cabal_actual": null,
       "ultima_dada_api": null,
-      "timestamp_fitxer": "2026-06-25T06:04:00",
+      "timestamp_fitxer": "2026-06-25T06:34:00",
       "prediccions": [
         {
           "hores_vista": 1,
-          "hora_prediccio": "07:00",
-          "cabal_m3s": 0.56,
+          "hora_prediccio": "07:30",
+          "cabal_m3s": 0.55,
           "model": "MAR",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 2,
-          "hora_prediccio": "08:00",
-          "cabal_m3s": 0.73,
+          "hora_prediccio": "08:30",
+          "cabal_m3s": 0.68,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 3,
-          "hora_prediccio": "09:00",
+          "hora_prediccio": "09:30",
           "cabal_m3s": 0.65,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 4,
-          "hora_prediccio": "10:00",
+          "hora_prediccio": "10:30",
           "cabal_m3s": 0.65,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 5,
-          "hora_prediccio": "11:00",
-          "cabal_m3s": 0.69,
+          "hora_prediccio": "11:30",
+          "cabal_m3s": 0.68,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 6,
-          "hora_prediccio": "12:00",
+          "hora_prediccio": "12:30",
           "cabal_m3s": 0.7,
           "model": "M8",
           "risc": "NORMAL"
@@ -107,47 +107,47 @@
       },
       "cabal_actual": null,
       "ultima_dada_api": null,
-      "timestamp_fitxer": "2026-06-25T06:04:00",
+      "timestamp_fitxer": "2026-06-25T06:35:00",
       "prediccions": [
         {
           "hores_vista": 1,
-          "hora_prediccio": "07:00",
+          "hora_prediccio": "07:30",
           "cabal_m3s": 6.98,
           "model": "MAR",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 2,
-          "hora_prediccio": "08:00",
-          "cabal_m3s": 6.16,
+          "hora_prediccio": "08:30",
+          "cabal_m3s": 6.11,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 3,
-          "hora_prediccio": "09:00",
-          "cabal_m3s": 6.03,
+          "hora_prediccio": "09:30",
+          "cabal_m3s": 5.97,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 4,
-          "hora_prediccio": "10:00",
-          "cabal_m3s": 6.3,
+          "hora_prediccio": "10:30",
+          "cabal_m3s": 6.31,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 5,
-          "hora_prediccio": "11:00",
-          "cabal_m3s": 6.49,
+          "hora_prediccio": "11:30",
+          "cabal_m3s": 6.45,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 6,
-          "hora_prediccio": "12:00",
-          "cabal_m3s": 6.16,
+          "hora_prediccio": "12:30",
+          "cabal_m3s": 6.06,
           "model": "M8",
           "risc": "NORMAL"
         }
