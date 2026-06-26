@@ -1,5 +1,5 @@
 {
-  "actualitzat": "2026-06-26T14:28:29.000235Z",
+  "actualitzat": "2026-06-26T14:59:19.809290Z",
   "embassaments": [
     {
       "nom": "La Baells",
@@ -8,8 +8,8 @@
         "lon": 1.880073
       },
       "capacitat_hm3": 108.71,
-      "volum_hm3": 100.578,
-      "pct_omplim": 92.52
+      "volum_hm3": 100.544,
+      "pct_omplim": 92.488
     },
     {
       "nom": "La Llosa del Cavall",
@@ -18,8 +18,8 @@
         "lon": 1.598937
       },
       "capacitat_hm3": 71.56,
-      "volum_hm3": 70.667,
-      "pct_omplim": 98.752
+      "volum_hm3": 70.675,
+      "pct_omplim": 98.763
     },
     {
       "nom": "Sant Ponç",
@@ -47,47 +47,47 @@
       },
       "cabal_actual": null,
       "ultima_dada_api": null,
-      "timestamp_fitxer": "2026-06-26T16:28:00",
+      "timestamp_fitxer": "2026-06-26T16:58:00",
       "prediccions": [
         {
           "hores_vista": 1,
-          "hora_prediccio": "16:30",
-          "cabal_m3s": 0.6,
+          "hora_prediccio": "17:30",
+          "cabal_m3s": 0.61,
           "model": "MAR",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 2,
-          "hora_prediccio": "17:30",
-          "cabal_m3s": 0.79,
-          "model": "M8",
-          "risc": "NORMAL"
-        },
-        {
-          "hores_vista": 3,
           "hora_prediccio": "18:30",
-          "cabal_m3s": 0.75,
-          "model": "M8",
-          "risc": "NORMAL"
-        },
-        {
-          "hores_vista": 4,
-          "hora_prediccio": "19:30",
           "cabal_m3s": 0.78,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
-          "hores_vista": 5,
+          "hores_vista": 3,
+          "hora_prediccio": "19:30",
+          "cabal_m3s": 0.7,
+          "model": "M8",
+          "risc": "NORMAL"
+        },
+        {
+          "hores_vista": 4,
           "hora_prediccio": "20:30",
-          "cabal_m3s": 0.74,
+          "cabal_m3s": 0.69,
+          "model": "M8",
+          "risc": "NORMAL"
+        },
+        {
+          "hores_vista": 5,
+          "hora_prediccio": "21:30",
+          "cabal_m3s": 0.73,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 6,
-          "hora_prediccio": "21:30",
-          "cabal_m3s": 0.76,
+          "hora_prediccio": "22:30",
+          "cabal_m3s": 0.75,
           "model": "M8",
           "risc": "NORMAL"
         }
@@ -107,47 +107,47 @@
       },
       "cabal_actual": null,
       "ultima_dada_api": null,
-      "timestamp_fitxer": "2026-06-26T16:28:00",
+      "timestamp_fitxer": "2026-06-26T16:59:00",
       "prediccions": [
         {
           "hores_vista": 1,
-          "hora_prediccio": "16:30",
-          "cabal_m3s": 5.58,
+          "hora_prediccio": "17:30",
+          "cabal_m3s": 5.76,
           "model": "MAR",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 2,
-          "hora_prediccio": "17:30",
-          "cabal_m3s": 5.44,
+          "hora_prediccio": "18:30",
+          "cabal_m3s": 5.29,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 3,
-          "hora_prediccio": "18:30",
-          "cabal_m3s": 5.38,
+          "hora_prediccio": "19:30",
+          "cabal_m3s": 5.06,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 4,
-          "hora_prediccio": "19:30",
-          "cabal_m3s": 5.6,
+          "hora_prediccio": "20:30",
+          "cabal_m3s": 5.49,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 5,
-          "hora_prediccio": "20:30",
-          "cabal_m3s": 5.76,
+          "hora_prediccio": "21:30",
+          "cabal_m3s": 5.56,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 6,
-          "hora_prediccio": "21:30",
-          "cabal_m3s": 5.71,
+          "hora_prediccio": "22:30",
+          "cabal_m3s": 5.58,
           "model": "M8",
           "risc": "NORMAL"
         }
