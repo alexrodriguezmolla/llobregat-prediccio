@@ -1,5 +1,5 @@
 {
-  "actualitzat": "2026-06-27T14:05:46.379093Z",
+  "actualitzat": "2026-06-27T14:36:35.243957Z",
   "embassaments": [
     {
       "nom": "La Baells",
@@ -47,47 +47,47 @@
       },
       "cabal_actual": null,
       "ultima_dada_api": null,
-      "timestamp_fitxer": "2026-06-27T16:05:00",
+      "timestamp_fitxer": "2026-06-27T16:36:00",
       "prediccions": [
         {
           "hores_vista": 1,
-          "hora_prediccio": "16:30",
-          "cabal_m3s": 0.61,
+          "hora_prediccio": "17:30",
+          "cabal_m3s": 0.58,
           "model": "MAR",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 2,
-          "hora_prediccio": "17:30",
-          "cabal_m3s": 0.8,
+          "hora_prediccio": "18:30",
+          "cabal_m3s": 0.77,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 3,
-          "hora_prediccio": "18:30",
-          "cabal_m3s": 0.74,
-          "model": "M8",
-          "risc": "NORMAL"
-        },
-        {
-          "hores_vista": 4,
           "hora_prediccio": "19:30",
           "cabal_m3s": 0.74,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
-          "hores_vista": 5,
+          "hores_vista": 4,
           "hora_prediccio": "20:30",
-          "cabal_m3s": 0.71,
+          "cabal_m3s": 0.74,
+          "model": "M8",
+          "risc": "NORMAL"
+        },
+        {
+          "hores_vista": 5,
+          "hora_prediccio": "21:30",
+          "cabal_m3s": 0.72,
           "model": "M8",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 6,
-          "hora_prediccio": "21:30",
-          "cabal_m3s": 0.79,
+          "hora_prediccio": "22:30",
+          "cabal_m3s": 0.73,
           "model": "M8",
           "risc": "NORMAL"
         }
@@ -107,7 +107,7 @@
       },
       "cabal_actual": null,
       "ultima_dada_api": null,
-      "timestamp_fitxer": "2026-06-27T16:05:00",
+      "timestamp_fitxer": "2026-06-27T16:36:00",
       "prediccions": [
         {
           "hores_vista": 1,
