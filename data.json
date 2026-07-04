@@ -1,5 +1,5 @@
 {
-  "actualitzat": "2026-07-04T00:37:45.256260Z",
+  "actualitzat": "2026-07-04T01:09:52.262341Z",
   "embassaments": [
     {
       "nom": "La Baells",
@@ -47,46 +47,46 @@
       },
       "cabal_actual": null,
       "ultima_dada_api": null,
-      "timestamp_fitxer": "2026-07-04T02:37:00",
+      "timestamp_fitxer": "2026-07-04T03:09:00",
       "prediccions": [
         {
           "hores_vista": 1,
-          "hora_prediccio": "03:30",
-          "cabal_m3s": 0.48,
+          "hora_prediccio": "04:00",
+          "cabal_m3s": 0.49,
           "model": "M7",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 2,
-          "hora_prediccio": "04:30",
-          "cabal_m3s": 0.44,
+          "hora_prediccio": "05:00",
+          "cabal_m3s": 0.46,
           "model": "M7",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 3,
-          "hora_prediccio": "05:30",
-          "cabal_m3s": 0.55,
+          "hora_prediccio": "06:00",
+          "cabal_m3s": 0.58,
           "model": "M7",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 4,
-          "hora_prediccio": "06:30",
-          "cabal_m3s": 0.5,
+          "hora_prediccio": "07:00",
+          "cabal_m3s": 0.52,
           "model": "M7",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 5,
-          "hora_prediccio": "07:30",
-          "cabal_m3s": 0.34,
+          "hora_prediccio": "08:00",
+          "cabal_m3s": 0.35,
           "model": "M7",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 6,
-          "hora_prediccio": "08:30",
+          "hora_prediccio": "09:00",
           "cabal_m3s": 0.44,
           "model": "M7",
           "risc": "NORMAL"
@@ -107,46 +107,46 @@
       },
       "cabal_actual": null,
       "ultima_dada_api": null,
-      "timestamp_fitxer": "2026-07-04T02:37:00",
+      "timestamp_fitxer": "2026-07-04T03:09:00",
       "prediccions": [
         {
           "hores_vista": 1,
-          "hora_prediccio": "03:30",
+          "hora_prediccio": "04:00",
           "cabal_m3s": 4.49,
           "model": "M7",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 2,
-          "hora_prediccio": "04:30",
+          "hora_prediccio": "05:00",
           "cabal_m3s": 4.63,
           "model": "M7",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 3,
-          "hora_prediccio": "05:30",
+          "hora_prediccio": "06:00",
           "cabal_m3s": 4.77,
           "model": "M7",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 4,
-          "hora_prediccio": "06:30",
-          "cabal_m3s": 5.63,
+          "hora_prediccio": "07:00",
+          "cabal_m3s": 5.02,
           "model": "M7",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 5,
-          "hora_prediccio": "07:30",
+          "hora_prediccio": "08:00",
           "cabal_m3s": 5.12,
           "model": "M7",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 6,
-          "hora_prediccio": "08:30",
+          "hora_prediccio": "09:00",
           "cabal_m3s": 6.64,
           "model": "M7",
           "risc": "NORMAL"
