@@ -1,5 +1,5 @@
 {
-  "actualitzat": "2026-10-19T05:02:06.383898Z",
+  "actualitzat": "2026-10-19T05:32:37.021196Z",
   "embassaments": [
     {
       "nom": "La Baells",
@@ -8,8 +8,8 @@
         "lon": 1.880073
       },
       "capacitat_hm3": 108.71,
-      "volum_hm3": 78.734,
-      "pct_omplim": 72.426
+      "volum_hm3": 78.763,
+      "pct_omplim": 72.452
     },
     {
       "nom": "La Llosa del Cavall",
@@ -18,8 +18,8 @@
         "lon": 1.598937
       },
       "capacitat_hm3": 71.56,
-      "volum_hm3": 58.856,
-      "pct_omplim": 82.247
+      "volum_hm3": 58.866,
+      "pct_omplim": 82.261
     },
     {
       "nom": "Sant Ponç",
@@ -28,8 +28,8 @@
         "lon": 1.605414
       },
       "capacitat_hm3": 24.49,
-      "volum_hm3": 20.795,
-      "pct_omplim": 85.19
+      "volum_hm3": 20.808,
+      "pct_omplim": 85.244
     }
   ],
   "punts": [
@@ -47,47 +47,47 @@
       },
       "cabal_actual": null,
       "ultima_dada_api": null,
-      "timestamp_fitxer": "2026-10-19T07:02:00",
+      "timestamp_fitxer": "2026-10-19T07:32:00",
       "prediccions": [
         {
           "hores_vista": 1,
-          "hora_prediccio": "08:00",
-          "cabal_m3s": 1.32,
+          "hora_prediccio": "08:30",
+          "cabal_m3s": 1.36,
           "model": "M7",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 2,
-          "hora_prediccio": "09:00",
+          "hora_prediccio": "09:30",
           "cabal_m3s": 1.39,
           "model": "M7",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 3,
-          "hora_prediccio": "10:00",
-          "cabal_m3s": 1.92,
+          "hora_prediccio": "10:30",
+          "cabal_m3s": 1.85,
           "model": "M7",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 4,
-          "hora_prediccio": "11:00",
+          "hora_prediccio": "11:30",
           "cabal_m3s": 1.92,
           "model": "M7",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 5,
-          "hora_prediccio": "12:00",
+          "hora_prediccio": "12:30",
           "cabal_m3s": 1.41,
           "model": "M7",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 6,
-          "hora_prediccio": "13:00",
-          "cabal_m3s": 1.92,
+          "hora_prediccio": "13:30",
+          "cabal_m3s": 1.78,
           "model": "M7",
           "risc": "NORMAL"
         }
@@ -107,47 +107,47 @@
       },
       "cabal_actual": null,
       "ultima_dada_api": null,
-      "timestamp_fitxer": "2026-10-19T07:01:00",
+      "timestamp_fitxer": "2026-10-19T07:32:00",
       "prediccions": [
         {
           "hores_vista": 1,
-          "hora_prediccio": "08:00",
-          "cabal_m3s": 13.38,
+          "hora_prediccio": "08:30",
+          "cabal_m3s": 14.4,
           "model": "M7",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 2,
-          "hora_prediccio": "09:00",
-          "cabal_m3s": 12.93,
+          "hora_prediccio": "09:30",
+          "cabal_m3s": 12.97,
           "model": "M7",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 3,
-          "hora_prediccio": "10:00",
+          "hora_prediccio": "10:30",
           "cabal_m3s": 13.9,
           "model": "M7",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 4,
-          "hora_prediccio": "11:00",
-          "cabal_m3s": 13.88,
+          "hora_prediccio": "11:30",
+          "cabal_m3s": 13.82,
           "model": "M7",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 5,
-          "hora_prediccio": "12:00",
-          "cabal_m3s": 11.82,
+          "hora_prediccio": "12:30",
+          "cabal_m3s": 12.08,
           "model": "M7",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 6,
-          "hora_prediccio": "13:00",
-          "cabal_m3s": 9.64,
+          "hora_prediccio": "13:30",
+          "cabal_m3s": 10.58,
           "model": "M7",
           "risc": "NORMAL"
         }
