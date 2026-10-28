@@ -1,5 +1,5 @@
 {
-  "actualitzat": "2026-10-28T20:14:22.839492Z",
+  "actualitzat": "2026-10-28T20:44:51.433446Z",
   "embassaments": [
     {
       "nom": "La Baells",
@@ -8,8 +8,8 @@
         "lon": 1.880073
       },
       "capacitat_hm3": 108.71,
-      "volum_hm3": 88.786,
-      "pct_omplim": 81.672
+      "volum_hm3": 88.818,
+      "pct_omplim": 81.702
     },
     {
       "nom": "La Llosa del Cavall",
@@ -45,48 +45,48 @@
         "ALERTA": 56.0,
         "ALERTA_MAXIMA": 145
       },
-      "cabal_actual": 0.921,
-      "ultima_dada_api": "28/10/2026T20:05:00",
-      "timestamp_fitxer": "2026-10-28T21:14:00",
+      "cabal_actual": 0.916,
+      "ultima_dada_api": "28/10/2026T20:35:00",
+      "timestamp_fitxer": "2026-10-28T21:44:00",
       "prediccions": [
         {
           "hores_vista": 1,
-          "hora_prediccio": "22:00",
+          "hora_prediccio": "22:30",
           "cabal_m3s": 0.99,
           "model": "M7",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 2,
-          "hora_prediccio": "23:00",
+          "hora_prediccio": "23:30",
           "cabal_m3s": 0.8,
           "model": "M7",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 3,
-          "hora_prediccio": "2026-10-29",
+          "hora_prediccio": "00:30",
           "cabal_m3s": 0.94,
           "model": "M7",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 4,
-          "hora_prediccio": "01:00",
+          "hora_prediccio": "01:30",
           "cabal_m3s": 0.98,
           "model": "M7",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 5,
-          "hora_prediccio": "02:00",
+          "hora_prediccio": "02:30",
           "cabal_m3s": 0.75,
           "model": "M7",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 6,
-          "hora_prediccio": "03:00",
+          "hora_prediccio": "03:30",
           "cabal_m3s": 0.81,
           "model": "M7",
           "risc": "NORMAL"
@@ -105,48 +105,48 @@
         "ALERTA": 65,
         "ALERTA_MAXIMA": 280
       },
-      "cabal_actual": 7.854,
-      "ultima_dada_api": "28/10/2026T20:10:00",
-      "timestamp_fitxer": "2026-10-28T21:14:00",
+      "cabal_actual": 7.751,
+      "ultima_dada_api": "28/10/2026T20:35:00",
+      "timestamp_fitxer": "2026-10-28T21:44:00",
       "prediccions": [
         {
           "hores_vista": 1,
-          "hora_prediccio": "22:00",
-          "cabal_m3s": 7.92,
+          "hora_prediccio": "22:30",
+          "cabal_m3s": 7.53,
           "model": "M7",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 2,
-          "hora_prediccio": "23:00",
+          "hora_prediccio": "23:30",
           "cabal_m3s": 7.83,
           "model": "M7",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 3,
-          "hora_prediccio": "2026-10-29",
+          "hora_prediccio": "00:30",
           "cabal_m3s": 7.56,
           "model": "M7",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 4,
-          "hora_prediccio": "01:00",
+          "hora_prediccio": "01:30",
           "cabal_m3s": 8.44,
           "model": "M7",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 5,
-          "hora_prediccio": "02:00",
+          "hora_prediccio": "02:30",
           "cabal_m3s": 7.36,
           "model": "M7",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 6,
-          "hora_prediccio": "03:00",
+          "hora_prediccio": "03:30",
           "cabal_m3s": 7.1,
           "model": "M7",
           "risc": "NORMAL"
