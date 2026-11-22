@@ -1,5 +1,5 @@
 {
-  "actualitzat": "2026-11-22T10:43:57.557086Z",
+  "actualitzat": "2026-11-22T11:15:14.175094Z",
   "embassaments": [
     {
       "nom": "La Baells",
@@ -18,8 +18,8 @@
         "lon": 1.598937
       },
       "capacitat_hm3": 71.56,
-      "volum_hm3": 62.234,
-      "pct_omplim": 86.968
+      "volum_hm3": 62.239,
+      "pct_omplim": 86.975
     },
     {
       "nom": "Sant Ponç",
@@ -28,8 +28,8 @@
         "lon": 1.605414
       },
       "capacitat_hm3": 24.49,
-      "volum_hm3": 22.069,
-      "pct_omplim": 90.41
+      "volum_hm3": 22.056,
+      "pct_omplim": 90.356
     }
   ],
   "punts": [
@@ -45,49 +45,49 @@
         "ALERTA": 56.0,
         "ALERTA_MAXIMA": 145
       },
-      "cabal_actual": 0.503,
-      "ultima_dada_api": "22/11/2026T10:35:00",
-      "timestamp_fitxer": "2026-11-22T11:43:00",
+      "cabal_actual": 0.333,
+      "ultima_dada_api": "22/11/2026T11:10:00",
+      "timestamp_fitxer": "2026-11-22T12:15:00",
       "prediccions": [
         {
           "hores_vista": 1,
-          "hora_prediccio": "12:30",
-          "cabal_m3s": 0.82,
+          "hora_prediccio": "13:00",
+          "cabal_m3s": 0.65,
           "model": "M7",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 2,
-          "hora_prediccio": "13:30",
-          "cabal_m3s": 1.01,
+          "hora_prediccio": "14:00",
+          "cabal_m3s": 0.92,
           "model": "M7",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 3,
-          "hora_prediccio": "14:30",
-          "cabal_m3s": 1.14,
+          "hora_prediccio": "15:00",
+          "cabal_m3s": 0.94,
           "model": "M7",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 4,
-          "hora_prediccio": "15:30",
-          "cabal_m3s": 0.91,
+          "hora_prediccio": "16:00",
+          "cabal_m3s": 0.77,
           "model": "M7",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 5,
-          "hora_prediccio": "16:30",
-          "cabal_m3s": 0.66,
+          "hora_prediccio": "17:00",
+          "cabal_m3s": 0.55,
           "model": "M7",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 6,
-          "hora_prediccio": "17:30",
-          "cabal_m3s": 0.87,
+          "hora_prediccio": "18:00",
+          "cabal_m3s": 0.72,
           "model": "M7",
           "risc": "NORMAL"
         }
@@ -105,48 +105,48 @@
         "ALERTA": 65,
         "ALERTA_MAXIMA": 280
       },
-      "cabal_actual": 9.877,
-      "ultima_dada_api": "22/11/2026T10:35:00",
-      "timestamp_fitxer": "2026-11-22T11:43:00",
+      "cabal_actual": 9.679,
+      "ultima_dada_api": "22/11/2026T11:10:00",
+      "timestamp_fitxer": "2026-11-22T12:15:00",
       "prediccions": [
         {
           "hores_vista": 1,
-          "hora_prediccio": "12:30",
+          "hora_prediccio": "13:00",
           "cabal_m3s": 9.59,
           "model": "M7",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 2,
-          "hora_prediccio": "13:30",
-          "cabal_m3s": 9.57,
+          "hora_prediccio": "14:00",
+          "cabal_m3s": 9.53,
           "model": "M7",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 3,
-          "hora_prediccio": "14:30",
+          "hora_prediccio": "15:00",
           "cabal_m3s": 9.27,
           "model": "M7",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 4,
-          "hora_prediccio": "15:30",
+          "hora_prediccio": "16:00",
           "cabal_m3s": 9.85,
           "model": "M7",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 5,
-          "hora_prediccio": "16:30",
+          "hora_prediccio": "17:00",
           "cabal_m3s": 8.79,
           "model": "M7",
           "risc": "NORMAL"
         },
         {
           "hores_vista": 6,
-          "hora_prediccio": "17:30",
+          "hora_prediccio": "18:00",
           "cabal_m3s": 8.39,
           "model": "M7",
           "risc": "NORMAL"
